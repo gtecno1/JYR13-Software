@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report3" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d2beae1-8c15-4155-a403-3fc25e8ed89c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="72"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idservi" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="nombres" class="java.lang.String"/>
+	<field name="apellidos" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="telefono" class="java.lang.String"/>
+	<field name="direccion" class="java.lang.String"/>
+	<field name="dinero" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="347" y="51" width="100" height="20" uuid="f5038a30-9409-4c34-bdf1-802a93c340e1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telf.:04262655092]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="79" uuid="2e954a1f-4aee-49f8-9b8d-c2446d69928a"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="20" y="10" width="175" height="31" uuid="b4da74c3-a127-473b-ad0e-aa5a2075f5c0"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="258" y="0" width="266" height="26" uuid="e0020bd3-c6ca-4aae-ad36-8d8b703f489a"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  REPORTE DE CHOFERES]]></text>
+			</staticText>
+			<image>
+				<reportElement x="649" y="10" width="153" height="31" uuid="08fa85cb-6771-4869-9127-45a2c3267e76"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="177" y="26" width="484" height="15" uuid="bcab2da4-d4e1-48c1-99d7-dfafe6990946"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Av.Antonio Maria Romero entre Calles La Marina y Junin. Machiques. Venezuela -Zona Postal 4021]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="41" width="415" height="20" uuid="150f9b66-988d-4f32-a201-0e97e225b5ef"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telfs.:0414-3328929/0426-5604873 - E-mail: josejyr@gmail.com - RIF. J-29620907-3]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="0" y="0" width="802" height="41" backcolor="#CCCCCC" uuid="1d1fe978-ec0d-4e5e-9b19-775c6aff168b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="10" width="76" height="20" uuid="ddaa1ba2-42dd-467f-ad28-df645025ca62"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEDULA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="10" width="43" height="20" uuid="f53fdc92-74a1-4e3f-849e-61976c48c7d2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="10" width="64" height="20" uuid="7d39da28-208c-4057-9fb8-b8d6adc0a936"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="10" width="74" height="20" uuid="baec6f05-238d-45cc-8fea-7e304485fb1a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APELLIDOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="10" width="78" height="20" uuid="e6f5211b-7477-4f1e-8683-ded4d11f5acf"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="535" y="10" width="88" height="20" uuid="385bc634-a3f2-41e4-b6c7-a31dd6a0b1c8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIRECCION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="649" y="10" width="72" height="20" uuid="ec95aa66-0cfb-4217-ac08-65395f2fc35e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DINERO Bsf]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="10" width="800" height="20" backcolor="#CCFFFF" uuid="de9c2eba-4865-453c-bdec-4cfb52a2ec40"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="195" y="10" width="100" height="20" uuid="fbf34c7a-d0b5-4846-8f88-8d5c85ce100c"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="10" width="88" height="20" uuid="fceff4f6-865c-4500-b960-72de0c068aab"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{edad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="10" width="76" height="20" uuid="dc61d38c-4ee2-482e-bb3d-ec96d3d47489"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cedula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="10" width="100" height="20" uuid="323119d6-85b3-4132-83c9-723d3b53b4a6"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="10" width="88" height="20" uuid="7c23764d-ec9d-49b9-9a30-30e7c9209199"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="649" y="10" width="60" height="20" uuid="f64f5657-d80a-430b-ac45-6abd14621de7"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dinero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="107" y="10" width="74" height="20" uuid="7bbcf22f-04e5-440e-a253-5d913efdac7e"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="8" width="802" height="20" backcolor="#000000" uuid="0e74f5ad-e8f4-4b18-a067-48f851da9269"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="31" y="10" width="100" height="20" forecolor="#FFFFFF" uuid="22e068c2-4ea4-40d3-8763-d00aa0c2ac74"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

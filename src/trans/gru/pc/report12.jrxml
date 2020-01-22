@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report12" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2ad8ddc8-326f-4feb-ba88-81084da27c25">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="seguro" class="java.lang.String"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="seguro" class="java.lang.String"/>
+	<field name="marca" class="java.lang.String"/>
+	<field name="modelo" class="java.lang.String"/>
+	<field name="color" class="java.lang.String"/>
+	<field name="año" class="java.lang.String"/>
+	<field name="placa" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="chofer" class="java.lang.String"/>
+	<field name="costo" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="79" uuid="dfef306a-9e57-4838-9d1b-6a138c968300"/>
+				<graphicElement>
+					<pen lineWidth="1.5"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="260" y="0" width="265" height="26" uuid="f97af10b-38eb-49a2-a264-685af09c4103"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE SERVICIOS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="159" height="33" uuid="5a36b980-9ed3-4923-96e6-75e95d7c67fe"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="629" y="10" width="161" height="33" uuid="5f95a0b5-ab51-40eb-b503-505a42ab68f7"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="151" y="28" width="484" height="15" uuid="b21620c9-4ef0-4582-b979-639b6549b87c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Av.Antonio Maria Romero entre Calles La Marina y Junin. Machiques. Venezuela -Zona Postal 4021]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="43" width="415" height="20" uuid="65972979-4693-48d2-aa18-46b4009f77d7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telfs.:0414-3328929/0426-5604873 - E-mail: josejyr@gmail.com - RIF. J-29620907-3]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="0" y="0" width="802" height="41" backcolor="#CCCCCC" uuid="c8a94830-d9e3-4151-8f60-ff33d2fac393"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="11" width="30" height="20" uuid="4aaf248f-e283-42f0-8448-9d1186ef4c01"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="11" width="63" height="20" uuid="82c30fd6-0118-4ead-9a3d-96e612094b59"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[SEGURO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="11" width="54" height="20" uuid="2d35e306-e158-43e4-babb-d36782b43b13"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[MARCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="11" width="61" height="20" uuid="f232ef9f-1b5a-4ae2-944b-f4ca86152756"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[MODELO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="11" width="53" height="20" uuid="afe655b1-9b1d-423d-a566-e358c1e67a2c"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[COLOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="11" width="40" height="20" uuid="99ecd006-6b9f-4384-81d4-68c1d6b051b6"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[AÑO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="11" width="67" height="20" uuid="caae1a2d-83d5-4fd9-87e3-88e0e69add6d"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[PLACA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="11" width="72" height="20" uuid="6311c093-ed89-40a5-b836-bafd280b7aeb"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[NOMBRE P]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="568" y="11" width="61" height="20" uuid="cec1ceae-bb16-4ded-9194-6a1c96a6e1f2"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[CHOFER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="629" y="11" width="78" height="20" uuid="0456873b-2454-40bc-b7dc-8d9720ba3e61"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[COSTO Bsf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="719" y="11" width="83" height="20" uuid="1e050801-6b9f-40b6-b8aa-72d80255f441"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="20" width="802" height="20" backcolor="#CCFFFF" uuid="ae04a882-fa97-48f8-b7e6-039d64c5cdf0"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="58" y="20" width="63" height="20" uuid="9e30d701-94c0-4897-ab12-8d801d743479"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{seguro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="20" width="30" height="20" uuid="4c563883-461d-43a3-81c4-1580024e0f61"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="20" width="54" height="20" uuid="ce40973b-cb4d-4f88-807e-40a01c69fcda"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="212" y="20" width="61" height="20" uuid="2d541adf-4785-4b57-9136-6bfad6251091"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="20" width="43" height="20" uuid="d4326c95-0b0d-49ec-ac47-be1df8a68702"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="20" width="40" height="20" uuid="490ee3f7-9ed2-4061-a2be-c889e3f24c22"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{año}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="20" width="67" height="20" uuid="e6b44009-66da-47f7-8ab5-f6118186a58a"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{placa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="496" y="20" width="55" height="20" uuid="d349f619-c8bf-4d72-9ca7-f67636755c6b"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="568" y="20" width="61" height="20" uuid="97b5079f-6fbd-4b26-b3fb-c65224381cd0"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chofer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="641" y="20" width="65" height="20" uuid="917a3e72-0b23-4f9e-b29c-1023fc41baaa"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{costo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="719" y="20" width="71" height="20" uuid="bad52339-c793-40c0-b56e-926923b1140e"/>
+				<textElement>
+					<font fontName="Monospaced" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="18" width="802" height="20" backcolor="#000000" uuid="ded9dff0-5fae-45f5-adcc-e6817538ace9"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="21" y="18" width="100" height="20" forecolor="#FFFFFF" uuid="684279ff-6709-4208-8b3a-70981c9e8cf5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

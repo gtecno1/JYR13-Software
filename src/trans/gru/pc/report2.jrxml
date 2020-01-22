@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="775c55a8-92f3-4c6d-bad4-895a54639a9f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="34"/>
+	<property name="ireport.y" value="23"/>
+	<parameter name="seguro" class="java.lang.String"/>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="placa" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="costo" class="java.lang.String"/>
+	<field name="costototal" class="java.lang.String"/>
+	<field name="fac" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="14" y="38" width="529" height="35" backcolor="#FFFFFF" uuid="6c2a92ba-6e9c-4c52-a64d-0253365a7625"/>
+			</rectangle>
+			<image>
+				<reportElement x="10" y="-1" width="235" height="33" uuid="429463c7-a74a-42b1-a3b4-ac6c92d95d23"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="78" width="565" height="1" uuid="bff92407-4646-44da-87fe-57725946e063"/>
+				<graphicElement>
+					<pen lineWidth="4.25"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="49" y="38" width="484" height="15" uuid="2ffa1843-8005-4ee9-8cff-6f9985638188"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Av.Antonio Maria Romero entre Calles La Marina y Junin. Machiques. Venezuela -Zona Postal 4021]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="53" width="415" height="20" uuid="17013b38-248e-4348-b857-a5bc833df277"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telfs.:0414-3328929/0426-5604873 - E-mail: josejyr@gmail.com - RIF. J-29620907-3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="5" width="249" height="27" uuid="83df7d07-d427-4001-8394-3dc26c33750b"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSPORTE JYR 13, C.A.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="414" y="0" width="177" height="32" uuid="f454cdca-2156-4b16-a794-6c0fa3f6d754"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="14" y="15" width="70" height="20" backcolor="#FFFFFF" uuid="29a9c58a-558c-4b51-a6a6-bec7be38ab16"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEGURO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="83" y="15" width="100" height="20" uuid="9e7da62f-3daa-43fa-87ac-af5ef4832c12"/>
+				<textFieldExpression><![CDATA[$P{seguro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="223" y="15" width="159" height="20" backcolor="#FFFFFF" uuid="2fce698a-bca0-4fdb-b1ca-3f1bbec18703"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUMERO DE CONTROL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="382" y="15" width="100" height="20" uuid="bc2a6583-5bd0-44fa-9519-e1cef7418bb1"/>
+				<textFieldExpression><![CDATA[$F{fac}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="14" y="12" width="529" height="41" backcolor="#FFFFFF" uuid="96fde946-4c1d-4b94-b09a-4f50adafe78f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="33" y="23" width="51" height="20" uuid="8e09b905-9792-4189-bcc3-48ed630a40d8"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="23" width="42" height="20" uuid="20811846-6063-4c15-a0ea-2f028a3552ac"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Placa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="23" width="69" height="20" uuid="507a34cc-c744-4bfc-95b1-b8c778f915cf"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre P]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="23" width="90" height="20" uuid="6ad6df46-7ab3-4013-9c49-7d37ca0662a9"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[C.Unitario Bsf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="23" width="104" height="20" uuid="d7945df3-89c1-4e77-94a7-1f1d335619da"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de servicio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="20" y="2" width="513" height="18" uuid="6093070a-15a1-459f-b288-7b1de23fa3a9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="112" y="2" width="59" height="20" uuid="fcdec202-2e34-4b40-a539-bc1caaca429c"/>
+				<textFieldExpression><![CDATA[$F{placa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="2" width="68" height="20" uuid="6aa10ec5-c4bc-4f28-a138-7ea78a6000d0"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="2" width="71" height="20" uuid="74343d10-6495-4d3b-bc73-a6b955d4478f"/>
+				<textFieldExpression><![CDATA[$F{costo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="2" width="76" height="20" uuid="f69e46e6-f601-48e3-85dd-740dcd65d2a2"/>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="2" width="73" height="20" uuid="0440f871-6458-49ca-bcb1-3b4443c046c7"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="200">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="33" y="53" width="100" height="20" uuid="96a74bc3-8cda-4317-9b3e-d35ff6ef947a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="190" y="22" width="143" height="1" uuid="5c5d1a67-e482-465d-bf64-78a6959492b6"/>
+			</line>
+			<staticText>
+				<reportElement x="245" y="33" width="71" height="20" uuid="749d9766-1ab3-437f-864e-4963f617b6a7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIRMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="33" width="76" height="20" uuid="25630941-cada-45b9-8501-bab627030389"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL Bsf:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="464" y="33" width="79" height="20" uuid="c3f39424-a94e-49bb-9550-d7e5ee66a2d8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{costototal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="33" width="144" height="20" uuid="614d1f9c-e3b8-408d-8908-026afa45274b"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA DE FACTURA]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="70" splitType="Stretch"/>
+	</summary>
+</jasperReport>

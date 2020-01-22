@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="auditoria" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9e8d2304-fb1d-4c78-a1c0-e06ad8d4d9de">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ce" class="java.lang.String"/>
+	<field name="ce" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="en" class="java.lang.String"/>
+	<field name="sa" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="309" y="59" width="157" height="20" uuid="1def2b98-7b41-499a-91ee-0f18de563ab9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Correo: JyR13c.a@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="0" width="186" height="26" uuid="7e3faf44-2300-4f07-aad9-7046f7c7928e"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENTRADA/SALIDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="26" width="186" height="15" uuid="adfc0b8f-7592-47fa-bd88-aefdda794747"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Machiques de Perija, estado zulia.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="41" width="100" height="20" uuid="4acac835-ea8a-4224-a392-092ec897463a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telf.:04262655092]]></text>
+			</staticText>
+			<image>
+				<reportElement x="18" y="10" width="227" height="69" uuid="23140277-a27f-4087-a3c7-a6285343b57d"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="526" y="10" width="265" height="69" uuid="922ef1ce-c8c5-49e2-acab-945b622cf48a"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="2" y="3" width="800" height="37" backcolor="#CCCCCC" uuid="c21c8715-da39-4ddd-ac31-f5df4ac8b98c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="63" y="12" width="100" height="20" uuid="3b155462-f471-4edf-9c9d-c54f328f4eca"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEDULA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="12" width="100" height="20" uuid="31facb2b-ec4a-4c5b-b8f4-3310e800e0ef"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="12" width="100" height="20" uuid="6b67f298-fb34-4ece-960e-f0bcc66f70fd"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HORA/ENTRADA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="547" y="12" width="100" height="20" uuid="83061998-0153-4786-9cab-b7238b8e7968"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HORA/SALIDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="695" y="12" width="100" height="20" uuid="0eb720b3-c257-42e6-831c-79d549ab0e9f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="15" width="800" height="20" backcolor="#CCFFFF" uuid="2a31b9f2-70ea-49b0-a39b-45585a3dfe0d"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="63" y="15" width="100" height="20" uuid="201d48e6-5c25-4f07-b329-254875de6f30"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ce}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="15" width="100" height="20" uuid="c22c6499-7ad5-4e79-b861-e1bb54f98f1b"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="15" width="100" height="20" uuid="f5e906e7-89ea-4790-b51d-53f8085b8e91"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{en}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="547" y="15" width="100" height="20" uuid="48e9b3e2-1069-49a4-87c2-ee62f8dfd0f7"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="695" y="15" width="100" height="20" uuid="40a9d9d1-48b6-43f1-ba14-7acf93268d30"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="17" width="802" height="20" backcolor="#000000" uuid="14043937-5cce-4ed6-bfe7-1e5ffe734ab9"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="33" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="ce29334a-f595-428e-9e60-e306b17fc9fb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

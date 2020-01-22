@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="auditoria2" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="60b68c6b-5efc-43ed-a66e-06abad2a1e70">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ce" class="java.lang.String"/>
+	<field name="ce" class="java.lang.String"/>
+	<field name="pro" class="java.lang.String"/>
+	<field name="act" class="java.lang.String"/>
+	<field name="hor" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="649" y="10" width="151" height="35" uuid="4a285f7f-c5bd-4626-8bc3-f0d794f58f5e"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="14" y="10" width="140" height="35" uuid="99b4fd05-afc2-401a-b62a-213b1f2d75c3"/>
+				<imageExpression><![CDATA["D:\\c\\escritorio2\\elba y maria\\Imagen5.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="258" y="0" width="264" height="26" uuid="abf18004-a730-4dcd-87ab-d2fdf5ab0e01"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROCESOS/ACTIVIDADES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="30" width="484" height="15" uuid="c5c1b34f-0294-4613-a779-f97be7e6b1b9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Av.Antonio Maria Romero entre Calles La Marina y Junin. Machiques. Venezuela -Zona Postal 4021]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="45" width="415" height="20" uuid="f15a0a43-35ac-4072-aac2-b33f45baab56"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telfs.:0414-3328929/0426-5604873 - E-mail: josejyr@gmail.com - RIF. J-29620907-3]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<rectangle radius="7">
+				<reportElement x="0" y="2" width="800" height="31" backcolor="#CCCCCC" uuid="c9e19895-2d5b-4524-bec2-936f9cf7212f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="54" y="13" width="100" height="20" uuid="fded879b-596f-497e-a85f-223ae47f41bf"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CEDULA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="13" width="100" height="20" uuid="3e90d8a8-ca9c-48e1-9668-dcd079fa7a5f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROCESO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="13" width="100" height="20" uuid="f3af22d8-bfb0-436d-a094-94450a18d287"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACTIVIDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="549" y="13" width="100" height="20" uuid="8ef6a34e-e51e-4675-8bdf-8946d7f210b8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HORA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="13" width="100" height="20" uuid="cb5ec859-11ae-47b8-b54f-6e4fae70a468"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="15" width="800" height="20" backcolor="#CCFFFF" uuid="56df3828-740c-412c-8d1d-5626e40f523d"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="44" y="15" width="100" height="20" uuid="0dfea9b2-f207-4023-bed2-ad2eaf2f45e5"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ce}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="15" width="100" height="20" uuid="5e7b02d9-8cc9-4318-a7ca-71860ebf1f4c"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="15" width="100" height="20" uuid="8057dd0b-9ad2-4918-8d81-6bf7725cc6e3"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{act}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="549" y="15" width="100" height="20" uuid="15dd06a9-2d4c-4cb2-aece-3089034d23e0"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="687" y="15" width="100" height="20" uuid="fd1a9d56-afbf-43be-8bb0-0cb5c681b632"/>
+				<textElement>
+					<font fontName="Monospaced" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="29" width="802" height="20" backcolor="#000000" uuid="a6ce4a7d-f0bf-4c27-95e8-6d5bdf93c013"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="25" y="29" width="100" height="20" forecolor="#FFFFFF" uuid="fa43605e-083d-4319-8307-8408a4f3f619"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
